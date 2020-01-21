@@ -16,7 +16,7 @@ class Pet{
   }
 
   public String toString(){
-    return "Name: " + this.name + "Type: " + this.type + "Weight: " + this.weight;
+    return "Name:" + this.name + " Type:" + this.type + " Weight:" + this.weight;
   }
 
   public void setName(String name){
@@ -31,6 +31,6 @@ class Pet{
 public class Main {
   public static void main(String[] args) {
     Pet pet1 = new Pet("Sparky", "Dog", 20.5);
-    pet1.toString();
+    System.out.println(pet1.toString());
   }
 }
