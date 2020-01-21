@@ -1,5 +1,6 @@
 
 class Pet{
+	
   private String name, type;
   private double weight;
 
@@ -23,9 +24,18 @@ class Pet{
     this.name = name;
   }
 
+	public String getName(){
+		return this.name;
+	}
+
   public void setWeight(double weight){
     this.weight = weight;
   }
+
+	public double getWeight(){
+		return this.weight;
+	}
+
 }
 
 public class Main {
