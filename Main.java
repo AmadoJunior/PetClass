@@ -10,7 +10,9 @@ class Pet{
   }
 
   public Pet(String type){
+    this.name = "Unknown";
     this.type = type;
+    this.weight = 0.0;
   }
 
   public String toString(){
@@ -28,6 +30,7 @@ class Pet{
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    Pet pet1 = new Pet("Sparky", "Dog", 20.5);
+    pet1.toString();
   }
 }
